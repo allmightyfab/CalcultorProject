@@ -5,7 +5,7 @@
         public double num1 {get; set;}
         public double num2 { get; set;}
         public string addingthing { get; set;}
-        public double result { get; set;}
+        public double Result { get; set;}
 
         public double Calculate()
         {
