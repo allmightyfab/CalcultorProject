@@ -16,7 +16,12 @@ namespace CalcultorProject.Controllers
         [HttpPost]
         public IActionResult Index(CalcModel model)
         {
-            
+            if (ModelState.IsValid)s
+            {
+                model.result = model.Calculate();
+                return View(model);
+            }
+            return View(model);
         }
        
     }
