@@ -18,7 +18,7 @@ namespace CalcultorProject.Controllers
         {
             if (ModelState.IsValid)
             {
-                model.result = model.Calculate();
+                model.Result = model.Calculate();
                 return View(model);
             }
             return View(model);
