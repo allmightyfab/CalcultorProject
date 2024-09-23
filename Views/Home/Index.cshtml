@@ -13,10 +13,10 @@
     <div> 
         <label>Operator:</label> 
         <select asp-for="addingthing"> 
-           <br /> <option value="+">+</option> 
-           <br /> <option value="-">-</option> 
-           <br /> <option value="*">*</option> 
-           <br /><option value="/">/</option> 
+           <option value="@Model.+">+</option> 
+           <option value="@Model.-">-</option> 
+           <option value="@Model.*">*</option> 
+           <option value="@Model./">/</option> 
         </select> 
     </div> 
 
