@@ -1,8 +1,14 @@
-﻿@{
+﻿@CalcultorProject.Models.CalcModel
+
+@{
     ViewData["Classic Calcultor"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h2>Calculator</h2>
+
+<form asp-action="Index" method="post"> 
+    <div> <label>Number 1:</label> 
+    <input asp-for="num1" type="number" step="any" /> </div> <div> <label>Operator:</label> <select asp-for="Operator"> <option value="+">+</option> <option value="-">-</option> <option value="*">*</option> <option value="/">/</option> </select> </div> <div> <label>Number 2:</label> <input asp-for="Number2" type="number" step="any" /> </div> <div> <input type="submit" value="Calculate" /> </div> </form> @if (Model != null)
+{
+     <div> <h3>Result: @Model.Result</h3> </div>
+}  
