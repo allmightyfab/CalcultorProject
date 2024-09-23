@@ -30,3 +30,12 @@
         <input type="submit" value="Calculate" /> 
     </div> 
 </form> 
+
+@if (Model != null)
+{
+    <div>
+        <h3>
+            Result: @Model.Result
+        </h3>
+    </div>
+}
